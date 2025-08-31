@@ -16,10 +16,10 @@
    git clone https://github.com/username/todo-list.git
    cd todo-list
 Установить зависимости:
-
+```bash
 npm install
-
+```
 Запустить проект:
-
+```bash
 npm react-script start
-
+```
