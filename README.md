@@ -21,5 +21,5 @@ npm i
 ```
 Запустить проект:
 ```bash
-npm react-script start
+npm start
 ```
