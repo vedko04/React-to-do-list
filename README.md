@@ -23,3 +23,4 @@ npm i
 ```bash
 npm start
 ```
+[Опробовать проект через vercel]([https://weather-app-react-9p57-q0mbpv6y0-vanyaws-projects.vercel.app](https://react-to-do-list-t6w1.vercel.app))
