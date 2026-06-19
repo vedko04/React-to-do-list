@@ -13,7 +13,7 @@
 
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/username/todo-list.git
+   git clone https://github.com/vedko04/React-to-do-list
    cd todo-list
 Установить зависимости:
 ```bash
