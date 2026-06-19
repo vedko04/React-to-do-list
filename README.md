@@ -14,10 +14,10 @@
 1. Клонировать репозиторий:
    ```bash
    git clone https://github.com/vedko04/React-to-do-list
-   cd todo-list
+   cd React-to-do-list
 Установить зависимости:
 ```bash
-npm install
+npm i
 ```
 Запустить проект:
 ```bash
