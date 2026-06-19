@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 function ToDOList() {
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
@@ -44,7 +45,7 @@ function ToDOList() {
         <div className="to-do-list">
             <h1>To-Do-List</h1>
 
-            <div>
+            <div className='input-text'>
                 <input
                     type="text"
                     placeholder="Enter a task..."
@@ -56,9 +57,9 @@ function ToDOList() {
                 </button>
             </div>
 
-            <ol>
+            <ol className='list-main'>
                 {tasks.map((task, index) => (
-                    <li key={task.id}>
+                    <li key={task.id} className='list-item'>
                         {editIndex === index ? (
                             <>
                                 <input
@@ -66,8 +67,8 @@ function ToDOList() {
                                     value={editText}
                                     onChange={(e) => setEditText(e.target.value)}
                                 />
-                                <button onClick={() => saveEdit(index)}>Save</button>
-                                <button onClick={() => setEditIndex(null)}>Cancel</button>
+                                <button className="add-task-btn" onClick={() => saveEdit(index)}>Save</button>
+                                <button className="add-task-btn" onClick={() => setEditIndex(null)}>Cancel</button>
                             </>
                         ) : (
                             <>
@@ -79,9 +80,9 @@ function ToDOList() {
                 >
                   {task.text}
                 </span>
-                                <button onClick={() => deleteTask(index)}>Delete</button>
-                                <button onClick={() => startEdit(index)}>Edit</button>
-                                <button onClick={() => toggleDone(index)}>
+                                <button className="btn-del" onClick={() => deleteTask(index)}>Delete</button>
+                                <button className="btn-edit" onClick={() => startEdit(index)}>Edit</button>
+                                <button className="btn-done" onClick={() => toggleDone(index)}>
                                     {task.isComplete ? "Undo" : "Done"}
                                 </button>
                             </>

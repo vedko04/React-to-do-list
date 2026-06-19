@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,11 +10,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #20374C;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.input-text{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .to-do-list{
@@ -21,9 +34,11 @@ code {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
 }
 h1{
   font-size: 4rem;
+  color: white;
 }
 button{
   font-size: 1.7rem;
@@ -31,13 +46,13 @@ button{
   padding: 10px 20px;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
-  background-color: dimgray;
+  background-color: #977C5A;
   transition: background-color 0.5s ease;
 }
 button:hover{
-  background-color: gray;
+  background-color: darkgrey;
 }
 
 input[type="text"]{
@@ -45,6 +60,8 @@ input[type="text"]{
   padding: 10px;
   border: 2px solid lightgray;
   color: black;
+  border-radius: 15px;
+
 }
 ol{
   display: flex;
@@ -54,19 +71,30 @@ ol{
 li{
   font-size: 2rem;
   font-weight: bold;
-  background-color: lightgray;
-  border: 3px solid lightgray;
-  border-radius: 5px;
+  background-color: #F2DECC;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   gap: 1rem;
+  padding: 10px;
+  max-width: 800px;
 }
 span{
+  color: #20374C;
   padding-inline: 20px;
+  max-width: 430px;
 }
-
+.btn-del{
+  background-color: darkred;
+}
+.btn-edit{
+  background-color: black;
+}
+.btn-done{
+  background-color: forestgreen;
+}
 .text{
   flex: 1;
 }
